@@ -5,11 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Student Entity für die Datenbank
- */
 @Entity
-@Table(name = "students")
+@Table(name = "student")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

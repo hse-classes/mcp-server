@@ -5,9 +5,6 @@ import kmo.dev.repository.StudentRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-/**
- * Initialisiert die Datenbank mit Beispiel-Studenten
- */
 @Component
 public class DataInitializer implements CommandLineRunner {
 
@@ -19,7 +16,6 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        // Beispiel-Studenten hinzufügen
         studentRepository.save(new Student(
                 "Max", "Mustermann", "12345", "Informatik", 3
         ));
