@@ -23,9 +23,10 @@ spring:
         name: student-mcp-server
         version: 1.0.0
         type: SYNC
+        protocol: STREAMABLE
 server:
   port: 8080
 logging:
   level:
-    de.example.mcp: DEBUG
+    kmo.dev: DEBUG
     org.springframework.ai.mcp: DEBUG
