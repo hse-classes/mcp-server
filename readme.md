@@ -11,7 +11,7 @@ Der Server weiß nichts von einem LLM, er stellt nur Tools bereit.
 ```
 
 Der Server läuft auf `http://localhost:8080`, Transport ist Streamable HTTP
-unter `/mcp`. Die H2-Console ist unter `/h2-console` erreichbar
+unter `/mcp`. Die H2-Console ist standardmäßig aus; mit `H2_CONSOLE_ENABLED=true` ist sie unter `/h2-console` erreichbar
 (JDBC-URL `jdbc:h2:mem:studentdb`, User `sa`).
 
 ## Tools

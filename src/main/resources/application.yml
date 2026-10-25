@@ -15,7 +15,8 @@ spring:
         format_sql: true
   h2:
     console:
-      enabled: true
+      # Off by default (the container is publicly reachable); set H2_CONSOLE_ENABLED=true locally.
+      enabled: ${H2_CONSOLE_ENABLED:false}
       path: /h2-console
   ai:
     mcp:
