@@ -28,6 +28,10 @@ Die Tools stehen als `@Tool`-Methoden in `StudentService` und werden in
 ## Ausprobieren
 
 - Mit dem [mcp-client](https://github.com/hse-classes/mcp-client) (Chat mit Gemini).
+  Der Client muss Streamable HTTP sprechen
+  (`spring.ai.mcp.client.streamable-http.connections`, Spring AI ab 1.1).
+  Die ältere SSE-Konfiguration (`...client.sse...`) mit Spring AI 1.0.x
+  verbindet sich mit diesem Server nicht.
 - Mit dem MCP Inspector: `npx @modelcontextprotocol/inspector`, Transport
   "Streamable HTTP", URL `http://localhost:8080/mcp`.
 - Mit jedem anderen MCP-fähigen Client (Claude Desktop, VS Code, ...) über
